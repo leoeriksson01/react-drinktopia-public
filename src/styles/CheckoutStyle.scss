@@ -1,0 +1,38 @@
+.layout {
+    margin-top: 5%;
+    width: auto;
+}
+
+.paper {
+    margin: 10px 0px;
+    padding: 10px;
+    width: 100%;
+}
+
+.stepper {
+    padding: 10px;
+}
+
+.buttons {
+    display: flex;
+    justify-content: flex-end;
+}
+
+.button{
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.divider {
+    margin: 20px 0px;
+}
+
+.spinner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.addressForm .customFormGroup {
+    margin: 5px 3px !important;
+}

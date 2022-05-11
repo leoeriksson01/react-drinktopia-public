@@ -1,0 +1,344 @@
+.singleDrinkContainer {
+  padding-top: 150px;
+  padding-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+}
+
+.drinkTop {
+  margin: 0px auto;
+  justify-content: center;
+  text-align: center;
+  width: 90%;
+}
+
+.drinkTop h1 {
+  letter-spacing: 2px;
+  color: #f6a017;
+}
+
+.drinkInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.drinkImageContainer {
+  width: 100%;
+  margin: 20px auto;
+  height: 50vh;
+}
+
+
+.drinkMainInfo h4 {
+  font-size: 1.1em;
+  line-height: 1.2;
+}
+.drinkIngredients li {
+  text-transform: capitalize;
+}
+
+.drinkIngredients, .drinkInstructions {
+    width: 100%;
+}
+
+.drinkMainInfo {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 0px auto;
+  text-transform: capitalize !important;
+}
+
+.drinkMainInfo::-webkit-scrollbar-thumb {
+  background-color: #f6a017;
+}
+
+.drinkMainInfo::-webkit-scrollbar {
+  width: 5px;
+}
+
+.drinkInstructions {
+  text-transform: none;
+  
+}
+
+
+
+
+.gray {
+  color:#9c9c9c;
+}
+
+
+.capitalize{
+    text-transform: capitalize;
+}
+
+.lineBreaker {
+  width: 100%;
+  max-width: 600px;
+  height: 70px;
+  background-position: center;
+  background-size: cover;
+  margin: 0px auto 10px auto;
+}
+
+.userLink {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+.drinkLinks {
+  display: flex;
+  flex-direction: column;
+}
+
+.drinkComments {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 60px auto 0px auto;
+}
+
+.comment {
+  margin: 20px 0px;
+}
+
+.drinkComments .updateButton {
+  margin: 10px 5px;
+  padding: 0.1em 0.3em;
+  font-size: 16px;
+}
+
+.cardActions {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+
+.cardRatings {
+  display: flex;
+  flex-direction: row;
+  width: 50%;
+  margin-top: 5px;
+  justify-content: center;
+}
+
+.cardLike {
+  margin-left: 10px;
+}
+
+.cardDislike {
+  margin-left: 20px;
+}
+
+.cardRatings img {
+  cursor: pointer;
+}
+
+.deleteText {
+    color: rgb(172, 0, 0);
+    text-decoration: underline;
+    margin-left: auto;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.confirmModal {
+        position: fixed;
+        top: 40vh;
+        width: 80vw;
+        left: 10vw;
+        z-index: 999999;
+        background:rgb(46, 46, 46);
+        color: white !important;
+        display: flex;
+        flex-direction: column;
+        cursor: pointer;
+        padding: 0px 20px;
+}
+
+.modalWrapper {
+    margin-top: 60px;
+    height: 100%;
+}
+
+.modalButtons {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    margin: 20px 0px;
+    justify-content: flex-end;
+}
+
+.deleteButton, .closeButton {
+    padding: 5px 10px;
+    cursor: pointer;
+    width: 100px;
+    transition: 0.4s;
+}
+
+
+
+.deleteButton {
+    background-color: rgb(172, 0, 0); 
+}
+
+.closeButton {
+    background-color: white;
+    color: black;
+    }
+
+.deleteButton:hover {
+    background-color: rgb(124, 0, 0); 
+}
+
+.closeButton:hover{
+background: rgb(139, 139, 139);
+}
+
+
+
+.modalText {
+    text-align: center;
+}
+
+.commentMain .cardRatings {
+    justify-content: flex-start;
+    width: auto;
+}
+
+.cardActions span {
+    font-size: 22px;
+}
+
+.copyUrl {
+    width: 16px;
+    margin: 0px auto;
+    cursor: pointer;
+}
+
+.linkModal {
+    position: fixed;
+    top: 40vh;
+    left: 0;
+    right: 0;
+    margin: 0px auto;
+    width: fit-content;
+    z-index: 999999;
+    background:rgb(46, 46, 46);
+    color: white !important;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    padding: 10px 20px;
+}
+
+.fakeInput {
+    background: white;
+    padding: 5px;
+    color: black;
+    width: 100%
+}
+
+.copyLinkWrapper {
+    display: flex;
+    align-items: center;
+    margin-top: 50px;
+    gap: 10px;
+}
+
+.drinkTop h3 {
+    font-family: "Outfit", sans-serif;
+}
+
+@media screen and (min-width: 600px) {
+  .drinkMainInfo {
+    align-items: center;
+    max-width: 60%;
+  }
+}
+
+@media only screen and (min-width: 768px) {
+    .confirmModal {
+        width: fit-content;
+        margin: auto;
+        left: 0;
+        right: 0;
+}
+}
+
+@media only screen and (min-width: 992px) {
+  .drinkInfo {
+    display: flex;
+    flex-direction: row;
+    padding-top: 50px;
+  }
+  .singleDrinkContainer {
+    padding-top: 200px;
+    display: flex;
+    flex-direction: column;
+  }
+  .drinkImageContainer {
+    height: 100%;
+    margin: 0px 5%;
+    max-width: 512px;
+    max-height: 512px;
+  }
+
+  .drinkMainInfo {
+    width: 35%;
+    max-height: 512px;
+    overflow-y: scroll;
+  }
+  .drinkIngredients {
+    padding-bottom: 15px;
+  }
+  .drinkLinks {
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 20px 0px;
+  }
+  .drinkComments {
+    width: 70%;
+    margin: 100px auto 0px 50px;
+  }
+  .copyUrl {
+    margin: 0px 0px;
+}
+}
+
+@media only screen and (min-width: 1200px) {
+  .drinkMainInfo h3 {
+    text-align: left;
+    margin-left: 30px;
+  }
+
+  .drinkInfo {
+    width: 70%;
+    margin: 0px auto;
+    padding-top: 100px;
+  }
+  .drinkTop {
+    width: 60%;
+  }
+  .drinkMainInfo {
+    width: 40%;
+    max-height: 450px;
+    overflow-y: scroll;
+    align-items: start;
+  }
+  .drinkImageContainer {
+    height: 100%;
+    margin: 0px 0%;
+    width: 512px;
+    height: 512px;
+  }
+  .drinkImageContainer {
+    margin: 0px;
+    max-width: 450px;
+    max-height: 450px;
+  }
+}

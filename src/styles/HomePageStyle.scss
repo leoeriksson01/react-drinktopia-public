@@ -1,0 +1,152 @@
+video {
+  object-fit: cover !important;
+  object-position: center;
+
+}
+
+.player-wrapper {
+  position: relative;
+  height: 100vh;
+  cursor: pointer;
+}
+
+.react-player {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.fixed-top {
+  z-index: 0;
+}
+
+.videoOverlay {
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  position: absolute;
+  background: linear-gradient(
+    to bottom,
+    rgba(0, 0, 0, 0.51),
+    rgba(0, 0, 0, 0.51),
+    rgba(0, 0, 0, 0.51),
+    rgba(0, 0, 0, 0.51),
+    rgba(0, 0, 0, 0.51)
+  );
+  z-index: 10;
+}
+
+.playerText {
+  z-index: 99;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 95%;
+  margin: 0px auto;
+  text-align: center;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+
+.playerText h2 {
+    margin-bottom: 50px;
+    font-family: "Staatliches", cursive;
+}
+
+.grid {
+  padding-top: 100px;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.drinkContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 0px auto;
+  width: 90%;
+}
+
+.drinkContainer:hover {
+  cursor: pointer;
+}
+
+.drinkContainer:hover img {
+  transform: scale(1.05);
+}
+
+
+.drinkContainer h3 {
+  color: #f6a017;
+  margin-top: 10px;
+  text-align: center;
+}
+
+.randomBtn {
+  text-decoration: none;
+  border: 1px solid #f6a017;
+  overflow: hidden;
+  z-index: 999;
+  width: fit-content;
+  font-size: 1.1em;
+  padding: 0.4em 0.8em;
+  color: #f4f4f4;
+  text-transform: uppercase;
+  font-family: "Staatliches", cursive;
+  transition: 1.5s;
+}
+
+.randomBtn:hover {
+  box-shadow: 1px 1px 25px 10px #f6a11757;
+  background: #f6a017;
+  color: #f4f4f4 !important;
+  cursor: pointer;
+}
+
+
+@media screen and (min-width: 600px) {
+}
+
+@media screen and (min-width: 768px) {
+
+  .drinkContainer h3 {
+    margin: 15px 0px;
+  }
+  .randomBtn {
+    font-size: 1.5em;
+    padding: 0.5em 1em;
+    border: 2px solid #f6a017;
+  }
+  .grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .drinkContainer {
+    width: 300px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .playerText h1 {
+    letter-spacing: 4px;
+  }
+  .playerText h2 {
+    letter-spacing: 2px;
+  }
+  .grid {
+    width: 80%;
+    margin: 0px auto;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  .drinkContainer {
+    width: 90%;
+  }
+  .playerText {
+      width: 80%;
+  }
+}

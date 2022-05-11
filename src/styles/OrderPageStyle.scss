@@ -1,0 +1,81 @@
+.orderContainer {
+    margin-top: 100px;
+    width: 100%;
+    color: black;
+    background: white;
+}
+
+.orderCard {
+    display: flex;
+    flex-direction: column;
+    background: white;
+    margin: 0px 0px;
+    border-bottom: 1px solid rgb(121, 121, 121);
+}
+
+.orderRow {
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+
+.showMore {
+    margin: auto 0px !important;
+    cursor: pointer;
+}
+
+.reverseArrow {
+    transform: rotate(180deg);
+}
+
+.orderColumn {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0px 5px;
+    word-break: break-word;
+}
+
+.margin-top{
+    margin-top: auto;
+}
+
+.margin-left {
+    margin-left: auto;
+}
+
+.grayBackground {
+    background: rgb(209, 209, 209);
+}
+
+@media screen and (min-width: 600px) {
+    .orderColumn {
+        margin: 0px 20px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+    .orderRow {
+        padding: 2%;
+        grid-template-columns: 25% 25% 25% 25%;
+    }
+
+}
+
+@media only screen and (min-width: 992px) {
+
+    .orderContainer {
+        width: 90%;
+        margin: 50px auto;
+    }
+
+}
+
+@media only screen and (min-width: 1200px) {
+    .orderContainer {
+        width: 60%;
+        margin: 100px auto;
+    }
+
+}

@@ -1,0 +1,36 @@
+.categoryHeader {
+  text-align: center;
+  padding-top: 200px;
+}
+
+.paginationbtn {
+  text-decoration: none;
+  border: 1px solid #f6a017;
+  overflow: hidden;
+  z-index: 999;
+  margin: 30px auto;
+  width: fit-content;
+  font-size: 1.3rem;
+  padding: 0.4em 0.8em;
+  color: #f4f4f4;
+  text-transform: uppercase;
+  font-family: "Staatliches", cursive;
+  transition: 2s;
+}
+
+.paginationbtn:hover {
+  box-shadow: 1px 1px 25px 10px #f6a11757;
+  background: #f6a017;
+  cursor: pointer;
+}
+
+.paginationbtn:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(120deg, transparent, #f6a11762, transparent);
+  transition: all 650ms;
+}

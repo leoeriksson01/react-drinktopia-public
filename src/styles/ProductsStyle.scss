@@ -1,0 +1,74 @@
+.productsContainer .drinkContainer {
+    padding: 12px;
+}
+
+.drinkContainer h4 {
+    margin-top: 10px;
+}
+.productsContainer .drinkContainer:hover img {
+    transform: none;
+}
+
+.productsContainer .drinkContainer h3 {
+    text-align: start;
+}
+
+.addToCartButton {
+    padding: 5px 0px;
+    background: #f6a017 !important;
+    border: none !important;
+    transition: 0.5s;
+    width: 100%;
+}
+
+.addToCartButton:hover {
+    background: #f7bf67!important;
+}
+
+.customNav .MuiSvgIcon-root {
+    fill: white !important;
+}
+
+
+.productsContainer .grid {
+    grid-row-gap: 30px;
+}
+
+.product {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.productBottom {
+    margin-top: auto;
+}
+
+.productImage {
+    height: 150px;
+}
+
+@media screen and (min-width: 600px) {
+    .productImage {
+        height: 200px;
+    }
+   
+}
+
+@media screen and (min-width: 768px) {
+   
+
+}
+
+@media screen and (min-width: 992px) {
+    .productImage {
+        height: 250px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+
+
+}
+

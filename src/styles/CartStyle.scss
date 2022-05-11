@@ -1,0 +1,134 @@
+.formRow {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cartContainer {
+      margin: 150px 0px;
+  }
+
+  .MuiSvgIcon-root {
+    height: 26px !important;
+    width: 26px !important;
+  }
+  
+  .form {
+    display: flex;
+    flex-direction: column;
+    max-width: 75%;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 50px;
+  }
+  
+  .formController {
+    margin: 10px !important;
+  }
+  
+  .emptyButton {
+    background: #f50057;
+    padding: 10px;
+    margin: 20px 0px;
+    color: white;
+    border-radius: 5px;
+  }
+
+  .checkoutButton {
+    background: #f6a017;;
+    padding: 10px 0px;
+    margin: 20px 0px;
+    color: white;
+    border-radius: 5px;
+    width: 137px;
+    text-align: center;
+    margin-left: 20px;
+  }
+  
+  .submitButton {
+    margin-left: 10px;
+    padding: 10px 30px 10px 30px;
+    line-height: 1.5;
+  
+    background-color: #f50057 !important;
+  }
+
+  .cartItem button {
+    width: 30px;
+    height: 30px;
+    background: none !important;
+    border: none !important
+  }
+
+  .cartItem {
+    display: flex;
+    margin: 20px 0px;
+    background-color: #141414;
+    padding: 20px;
+  }
+
+  .cartItem img:hover, .cartItem p:hover {
+    cursor: pointer;
+  }
+
+  .itemMainInfo {
+    display: flex;
+    flex-direction: column;
+    margin-left: 40px;
+    justify-content: space-around;
+  }
+
+  .itemPrice {
+    margin: auto 5px 0px auto;
+  }
+
+  .rowItems {
+    display: flex;
+    flex-direction: row;
+    background: white;
+    color: black;
+    width: fit-content;
+    z-index: 99999;
+  }
+
+  .cartItemImage {
+    width: 120px;
+    height: 120px;
+  }
+
+  .quantity {
+    font-size: 1em;
+    margin: auto 0px;
+  }
+
+  .cartList {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .productDescription {
+    text-transform:none !important;
+    margin-top: 30px;
+  }
+
+  .drinkImageContainer .addToCartButton {
+    background: rgb(105, 105, 105) !important;
+    padding: 10px 0px;
+  }
+
+  .paymentMethod {
+margin: 10px 0px;
+  }
+
+  .paymentText {
+    margin: 10px 0px !important;
+}
+  
+  @media only screen and (min-width: 450px) {
+    .formRow {
+      flex-direction: row;
+    }
+    .form {
+      max-width: 100%;
+    }
+  }
+  

@@ -1,0 +1,356 @@
+.profilePageContainer {
+    padding-top: 150px;
+    text-align: center;
+}
+
+.profileGreeting {
+    width: 90%;
+    margin: 0px auto;
+    
+}
+
+.profileRecipeList {
+  display: flex;
+  flex-direction: row;
+  max-width: 800px;
+  overflow-x: scroll;
+  margin: 50px auto;
+}
+
+.recipeCard {
+  display: flex;
+  flex-direction: column;
+  margin: 0px auto;
+}
+
+.recipeCard:hover {
+  cursor: pointer;
+}
+
+.recipeCard h3 {
+  color: #f6a017;
+}
+
+.accepted, .pending {
+    position: absolute;
+    bottom: 10%;
+  width: 100%;
+  padding: 10px 0px;
+  font-weight: bold;
+}
+
+.statusContainer h4 {
+  margin: auto;
+}
+
+.statusContainer {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.accepted {
+  background-color: rgba(0, 168, 0, 0.801);
+}
+
+.pending {
+  background-color: rgba(250, 175, 35, 0.801);
+}
+.updateButton {
+    text-decoration: none;
+    border: 1px solid #f6a017;
+    overflow: hidden;
+    z-index: 999;
+    margin: 20px auto;
+    text-decoration: none;
+    border: 1px solid #f6a017;
+    overflow: hidden;
+    z-index: 999;
+    width: fit-content;
+    padding: 0.3em 0.6em;
+    color: #f4f4f4;
+    transition: 1s;
+    background: none !important;
+    display: block;
+  }
+  
+  .updateButton:hover {
+    box-shadow: 1px 1px 25px 10px #f6a11757;
+    background: #f6a017 !important;
+    color: #f4f4f4 !important;
+    cursor: pointer;
+  }
+
+  .addRecipeContainer {
+    margin: 20px auto;
+  }
+
+  .formRow {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+
+  .customFormGroup {
+    width: 80%;
+    padding: 5px 10px;
+    height: fit-content;
+    margin: 5px auto 20px auto;
+    border-radius: 5px;
+  }
+
+
+ 
+
+  .customFormSelect {
+    width: 100%;
+  }
+
+  .ingredientInput {
+    margin: 10px 0px;
+  }
+
+  .ingredientsList {
+    list-style-type:decimal;
+  }
+
+  .ingredientsList input {
+    margin: 5px 0px;
+    padding: 5px 5px;
+  }
+
+  .ingredientsList li button {
+    margin: 5px 10px;
+    text-decoration: none;
+    border: 1px solid #f6a017;
+    overflow: hidden;
+    z-index: 999;
+    width: fit-content;
+    padding: 0.3em 0.6em;
+    color: #f4f4f4;
+    transition: 1s;
+    background: none !important;
+  }
+
+  .appendButton {
+    margin: 5px 10px;
+    text-decoration: none;
+    border: 1px solid #f6a017;
+    overflow: hidden;
+    z-index: 999;
+    width: fit-content;
+    padding: 0.3em 0.6em;
+    color: #f4f4f4;
+    transition: 1s;
+    background: none !important;
+  }
+
+  .appendButton:hover, .ingredientsList li button:hover
+
+  {
+    box-shadow: 1px 1px 5px 2px #f6a11757;
+    background: #f6a017 !important;
+    color: #f4f4f4 !important;
+    cursor: pointer;
+  }
+
+  .uploadFile {
+    display: block;
+    margin: 40px auto;
+  }
+
+  .profileRecipeOrderContainer {
+    display: flex;
+    flex-direction: column;
+    margin-top: 100px;
+  }
+
+  .recipeCard .modalButtons {
+      margin: 15px auto;
+  }
+
+  li .deleteButton {
+      margin-left: 20px !important;
+  }
+
+  .uploadedImage {
+      display: flex;
+      flex-direction: column;
+      margin: 20px 0px;
+  }
+
+  .inputWrapper {
+      display: flex;
+      flex-direction: column;
+      width: 100%;
+      text-align: start;
+  }
+
+  .inputWrapper label {
+      margin-left: 5%;
+  }
+
+  .inputWrapper input, select, textarea  {
+      width: 90% !important;
+  }
+
+  .addRecipeContainer form {
+      margin-top: 50px;
+  }
+
+label {
+      text-align: start;
+      display: flex;
+      margin-left: 1%;
+  }
+
+  .editPageContainer {
+      margin-top: 100px;
+      display: flex;
+
+      form {
+          width: 100%;
+      }
+
+      .addRecipeContainer {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          width: 90%;
+          justify-content: center;
+          margin: 50px auto;
+      }
+
+      .uploadedImage {
+          align-items: center;
+      }
+  }
+
+@media screen and (min-width: 600px) {
+   
+  }
+  
+  @media screen and (min-width: 768px) {
+    .updateButton {
+        padding: 0.3em 0.6em;
+        border: 2px solid #f6a017;
+      }
+      .formRow .customFormGroup {
+          width: 45%;
+      }
+
+      .ingredientsList ul, li, .appendButton {
+        text-align: start;
+    }
+
+    .appendButton {
+        display: flex;
+        margin-left: 5% !important;
+    }
+
+    .ingredientsList {
+        display: grid;
+        grid-template-columns: 50% 50%;
+        row-gap: 20px;
+    }
+
+    .ingredientsList .customFormGroup {
+        width: 80%;
+    }
+
+    .uploadedImage {
+        width: 50%;
+    }
+
+    .editPageContainer {
+        .addRecipeContainer {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            width: 90%;
+            justify-content: start;
+            margin: 50px auto;
+        }
+  
+        .uploadedImage {
+            margin: 20px auto;
+        }
+    
+  }
+}
+  
+  @media screen and (min-width: 992px) {
+    
+  }
+  
+  @media screen and (min-width: 1200px) {
+      
+    .profileGreeting {
+        width: 50%;
+        text-align: center;
+    }
+    .profilePageContainer {
+        padding-top: 200px;
+    }
+    .form-control {
+        width: 90% !important;
+    }
+    .addRecipeContainer {
+      margin: 60px auto;
+      width: 60%;
+    }
+
+    .customFormControl {
+      margin: 0px 20px;
+    }
+    .formRow {
+      flex-direction: row;
+      margin: 20px 0px;
+    }
+
+    .form-label {
+      width: 70% !important;
+      text-align: left;
+    }
+
+    .customFormGroup {
+      width: 45%;
+      margin: 0px 5px;
+    }
+    textarea.customFormGroup {
+      height: 100px;
+    }
+    .customLargeFormGroup {
+      width: 45%;
+    }
+    .customFormSelect {
+      width: 45%;
+      margin: 0px 5px;
+    }
+
+    .drinkComments .customFormGroup {
+        margin: 20px auto;
+    }
+
+    .editPageContainer {
+
+        .addRecipeContainer {
+            width: 70% !important;
+            margin: 0px auto;
+        }
+     
+        .addRecipeContainer {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            width: 90%;
+            justify-content: start;
+            margin: 50px auto;
+        }
+  
+
+
+    
+  }
+  }

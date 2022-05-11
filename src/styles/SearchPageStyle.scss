@@ -1,0 +1,141 @@
+.searchContainer {
+    margin-top: 150px;
+    width: 90%;
+    display: flex;
+    flex-direction: column;
+    margin: 150px auto 0px auto;
+}
+
+.searchInput {
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.searchDrinkCard {
+    background-color: rgb(27, 27, 27);
+    padding: 20px 10px;
+    margin: 0px 0px 20px 0px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.searchName {
+    color: #f6a017;
+}
+
+.searchInfo {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.searchImage {
+    height: 100px;
+    width: 100px;
+    margin-left: auto;
+}
+
+.searchIngredients {
+    flex: 1;
+    margin-right: 5%;
+    max-height: 100px;
+    overflow-y: scroll;
+    padding: 5px;
+}
+
+.searchType {
+    background-color: rgb(27, 27, 27);
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    width: 100%;
+    color: white;
+    text-align: center;
+    cursor: pointer;
+    margin-bottom: 50px;
+    border-radius: 5px;
+}
+
+.types {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 10px;
+}
+
+.types p {
+    width: fit-content;
+    margin: 5px auto !important;
+}
+.typeSelection {
+    display: flex;
+    flex-direction: column;
+}
+
+.activeType {
+    border-bottom: 3px solid #f6a017;
+}
+
+.searchMainContent {
+    display: flex;
+    flex-direction: column;
+    margin: 50px 0px;
+}
+
+@media screen and (min-width: 600px) {
+   
+}
+
+@media screen and (min-width: 768px) {
+    .searchIngredients {
+        max-height: 150px;
+    }
+
+    .searchImage {
+        height: 150px;
+        width: 150px;
+    }
+
+    .types {
+        width: 60%;
+        margin: 10px auto;
+    }
+  
+}
+
+@media screen and (min-width: 992px) {
+  
+}
+
+@media screen and (min-width: 1200px) {
+
+    .searchMainContent {
+        flex-direction: row;
+    }
+
+    .searchType {
+        width: fit-content;
+        height: fit-content;
+        margin-bottom: 0px;
+    }
+
+    .types {
+flex-direction: column;
+width: 100%;
+    }
+
+    .typeSelection {
+        display: flex;
+        align-items: center;
+        margin: 10px 0px;
+    }
+
+    .searchDrinksContainer {
+        margin-left: 100px;
+        width: 100%;
+    }
+
+    .searchContainer {
+        width: 70%;
+    }
+
+}
