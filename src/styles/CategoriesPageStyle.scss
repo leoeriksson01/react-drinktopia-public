@@ -1,21 +1,23 @@
 .categoriesContainer {
-    width: 100%;
+    width: 95%;
+    margin: 0px auto;
 }
 
 .categoriesGrid {
-    padding-top: 200px;
+    padding-top: 125px;
     width: 100%;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 1.5% 2.5%;
 }
 
 .categoryCard {
     display: flex;
     flex-direction: column;
     margin: auto;
-    width: 90%;
     transition: 1s;
     height: 100%;
+    position: relative;
 }
 
 .categoryCard:hover {
@@ -52,7 +54,6 @@
         rgba(0, 0, 0, 0.51),
         rgba(0, 0, 0, 0.51)
     );
-    z-index: 99999;
 }
 
 .categoryCard h3 {
@@ -61,11 +62,12 @@
     width: 100%;
     color: #f6a017;
     text-align: center;
-    position: relative;
-    top: -30%;
+    position: absolute;
+   
+    bottom: 0%;
     transition: 1s;
     padding: 5px 0px;
-    z-index: 999999;
+    z-index: 1;
 }
 
 .drinkImage {
@@ -81,23 +83,31 @@
 }
 
 @media only screen and (min-width: 768px) {
+    .categoriesContainer {
+        width: 95%
+    }
+    .categoriesGrid {
+       grid-template-columns: 1fr 1fr;
+    }
+    .categoryCard h3 {
+        font-size: 2.2em;
+    }
+    
 }
 
 @media only screen and (min-width: 992px) {
     .categoriesGrid {
-        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
     }
 
 }
 
 @media only screen and (min-width: 1200px) {
     .categoriesContainer {
-        width: 1200px;
-        margin: 0px auto;
+        width: 60%;
     }
-
-   
-    .categoryCard {
-        width: 300px;
+    .categoriesGrid {
+        grid-template-columns: 1fr 1fr 1fr;
+        gap: 3% 2%;
     }
 }
